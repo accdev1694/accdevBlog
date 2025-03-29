@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent-color: #6bc2a1;
+  --primary-color: #9a9a9a;
+  --secondary-color: #ffffff;
+  --primary-font-family: "Inter";
+  --secondary-font-family: "Roboto Mono";
+}
+
+body,
+html {
+  background: linear-gradient(#000000, #102118, #000000);
+  background-repeat: no-repeat;
+  color: var(--primary-color);
+  font-family: var(--primary-font-family);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#root{
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.299);
+    padding: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+    font-weight: 800;
+  }
+
+  .nav img {
+    width: 40px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    vertical-align: middle;
+  }
+
+  .nav img:hover {
+    opacity: 100%;
+    transform: scale(1.2);
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+  }
+
+  a, .sign-out-btn {
+    text-decoration: none;
+    color: var(--primary-color);
+    letter-spacing: 0.1px;
+    transition: all ease-in-out 0.3s;
+    background: transparent;
+  }
+  
+  a:hover {
+    color: aliceblue;
+  }
+  
+  .sign-out-btn{
+    border: 1px solid ;
+    padding: 3px 20px;
+    border-radius: 10px;
+    color: var(--accent-color);
+    background: linear-gradient(#50505073, #00000000);
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+    font-size: 14px;
+  }
+  .sign-out-btn:hover {
+    filter: brightness(1.5);
+    
+  }
+
+.main {
+  width: 70%;
+  margin: 30px auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
